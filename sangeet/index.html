@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <div id="makers">
+            <a href="cont.html"><h4>Content makers</h4></a>
+            <a href="guide.html"><h4>Guidelines</h4></a>
+        </div>
+        <div id="sangeet-logo">
+            <img src="Sangeet.png" alt="">
+        </div>
+        
+    </header>
+    <ul>
+        <div id="keys">        
+        <li class="key" data-key="1">1</li>
+        <li class="key" data-key="2">2</li>
+        <li class="key" data-key="3">3</li>
+        <li class="key" data-key="4">4</li>
+        <li class="key" data-key="5">5</li>
+        <li class="key" data-key="6">6</li>
+        <li class="key" data-key="7">7</li>
+        <li class="key" data-key="8">8</li>
+        <li class="key" data-key="9">9</li>
+        <li class="key" data-key="a">a</li>
+        <li class="key" data-key="b">b</li>
+        <li class="key" data-key="c">c</li>
+        <li class="key" data-key="d">d</li>
+        <li class="key" data-key="e">e</li>
+        <li class="key" data-key="f">f</li>
+        <li class="key" data-key="g">g</li>
+    </ul>
+
+</div>
+</body>
+<script>
+    // function change_makers(){
+    //     document.getElementById('makers').style.border="2px solid yellow"
+    // }
+    let keyPiano ={
+        '1':'audio/1.mp3',
+        '2':'audio/2.mp3',
+        '3':'audio/3.mp3',
+        '4':'audio/4.mp3',
+        '5':'audio/5.mp3',
+        '6':'audio/6.mp3',
+        '7':'audio/7.mp3',
+        '8':'audio/8.mp3',
+        '9':'audio/9.mp3',
+        'g':'audio/10.mp3',
+        'a':'audio/a.mp3',
+        'b':'audio/b.mp3',
+        'c':'audio/c.mp3',
+        'd':'audio/d.mp3',
+        'e':'audio/e.mp3',
+        'f':'audio/f.mp3'
+
+    };
+ 
+    document.addEventListener('keydown',
+    (event) => playPiano(event.key)
+    );
+    function playPiano(key){
+        audio = new Audio(keyPiano[key]);
+        audio.play();
+    }
+
+    
+</script>
+</html>

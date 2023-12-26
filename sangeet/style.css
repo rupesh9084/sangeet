@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: orange;
+    
+}
+#sangeet-logo{
+    display: block;
+    text-align: center;
+    padding: 90px 10px;
+    font-family: 'Mr Dafoe', cursive;
+
+}
+#makers{
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    justify-content: space-between;
+    background-color: rgba(8, 20, 60, 0.68);
+    margin: 10px 10px;
+}
+#makers a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+#makers a:hover{
+    background-color:black;
+}
+#sangeet-logo img{
+    height: 120vh;   
+}
+.key{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+#keys{
+    margin: 2% 10% 8% 10%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+#makers_head{
+    display: block;
+    text-align: center;
+    padding: 3%;
+    font-family: 'Carattere', cursive;
+    font-size: 90px;
+}
+h2,p{
+    color: white;
+}
+.cand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cand #candi{
+    padding: 10%;
+
+}
+.cand img{
+    height: 30vh;
+}
+#main_sec{
+    /* height: 100vh; */
+    width: 80%;
+    margin: 100px 7%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.477);
+    padding: 3%;
+}
+
